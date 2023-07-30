@@ -1,7 +1,7 @@
 """
 Interpreter Module
 
-Interprets messages and calls t he appropriate functions to return to the slackbot
+Interprets messages and calls the appropriate actions to return to the slackbot
 
 Functions:
     1. interpret_message(message): Interpret the message and return a response

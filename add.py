@@ -1,5 +1,5 @@
 """
-Add Module
+Add Action Module
 
 Adds two numbers together
 

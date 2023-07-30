@@ -1,5 +1,5 @@
 """
-Multiply Module
+Multiply Action Module
 
 Multiplies two numbers together
 
