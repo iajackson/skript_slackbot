@@ -1,6 +1,6 @@
 # slackbot_concept
 
-Low level concept for slackbot
+Basic concept for slackbot
 
 Created based off tutorial [here](https://www.pragnakalp.com/create-slack-bot-using-python-tutorial-with-examples/)
 
