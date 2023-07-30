@@ -4,13 +4,13 @@ Add Module
 Adds two numbers together
 
 Functions:
-    1. add(a,b): Adds two numbers together
+    1. run(a,b): Adds two numbers together
 
 Author: Ian Jackson
 """
 
 
-def add(a, b):
+def run(a, b):
     """
     Adds two numbers together
 
