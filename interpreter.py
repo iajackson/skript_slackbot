@@ -11,7 +11,7 @@ Author: Ian Jackson
 
 import add  # TODO: figure out how to dynamically load and call module
 import multiply
-
+import basic
 
 def interpret_message(message):
     """
@@ -24,14 +24,18 @@ def interpret_message(message):
         string|None: The response to return, or None
 
     """
+
     args = message.split()
     if args[0] == "add":
         return add.run(args[1], args[2])
-
-    if args[0] == "multiply":
+    elif args[0] == "multiply":
         return multiply.run(args[1], args[2])
-
-    if args[0] == "hi":
+    elif args[0] == "hi":
         return "hello"
-
+    elif args[0] == "break":
+        pass_msg = basic.basic_interpret(message)
+        string_dict = {key: str(value) for key, value in pass_msg.items() }
+        print(string_dict)
+        return str(string_dict)
+        
     return None
