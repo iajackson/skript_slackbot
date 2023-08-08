@@ -1,1 +1,4 @@
-slackclient flask slackeventsapi
+slackclient
+flask
+slackeventsapi
+nltk

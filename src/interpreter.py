@@ -13,6 +13,7 @@ import add  # TODO: figure out how to dynamically load and call module
 import multiply
 import basic
 
+
 def interpret_message(message):
     """
     Interprets the message and returns a response
@@ -28,14 +29,14 @@ def interpret_message(message):
     args = message.split()
     if args[0] == "add":
         return add.run(args[1], args[2])
-    elif args[0] == "multiply":
+    if args[0] == "multiply":
         return multiply.run(args[1], args[2])
-    elif args[0] == "hi":
+    if args[0] == "hi":
         return "hello"
-    elif args[0] == "break":
+    if args[0] == "break":
         pass_msg = basic.basic_interpret(message)
-        string_dict = {key: str(value) for key, value in pass_msg.items() }
+        string_dict = {key: str(value) for key, value in pass_msg.items()}
         print(string_dict)
         return str(string_dict)
-        
+
     return None
