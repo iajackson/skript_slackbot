@@ -16,7 +16,18 @@ Environment variables need to be set for slack access:
 
 - SLACK_TOKEN The slack token authorising access for the bot
 - SIGNING_SECRET The signing secret used to verify slack events
+- PORT The port the bot will run on
 
 ## Usage
 
 `python slackbot.py`
+
+## Docker Usage
+
+`docker compose up`
+
+### Environment variables
+
+- BOT_SLACK_TOKEN - The bot user oauth token
+- BOT_SIGNING_SECRET - The bot signing secret
+- BOT_PORT - The port the bot will run on

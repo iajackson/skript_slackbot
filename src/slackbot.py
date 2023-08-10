@@ -18,11 +18,11 @@ from slack.errors import SlackApiError
 import interpreter
 
 # authenticates app
-SLACK_TOKEN = os.environ("SLACK_TOKEN")
+SLACK_TOKEN = os.environ["SLACK_TOKEN"]
 # used to verify slack events
-SIGNING_SECRET = os.environ("SIGNING_SECRET")
+SIGNING_SECRET = os.environ["SIGNING_SECRET"]
 # flask port
-PORT = os.environ("PORT")
+PORT = os.environ["PORT"]
 
 
 app = Flask(__name__)
@@ -52,4 +52,4 @@ def message(payload):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=PORT)
+    app.run(host="0.0.0.0", port=PORT, debug=True)

@@ -1,0 +1,14 @@
+services:
+  bot: 
+    build:
+      context: src
+      target: builder
+    environment:
+      - SLACK_TOKEN=${BOT_SLACK_TOKEN}
+      - SIGNING_SECRET=${BOT_SIGNING_SECRET}
+      - PORT=${BOT_PORT}
+    # flask requires SIGINT to stop gracefully
+    # (default stop signal from Compose is SIGTERM)
+    stop_signal: SIGINT
+    ports:
+      - '${BOT_PORT}:${BOT_PORT}'
