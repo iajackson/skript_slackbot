@@ -10,16 +10,18 @@ Author: Ian Jackson
 """
 
 
-def run(a, b):
+def run(input):
     """
     Multiplies two numbers together
 
     Parameters:
-        a (string): The first number
-        b (string): The second number
+        input (string): The function parameter(s) as a string
 
     Returns:
         int: The product of a and b
 
     """
+    paramList = input.split(",")
+    a = paramList[0].strip()
+    b = paramList[1].strip()
     return int(a) * int(b)
