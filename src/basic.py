@@ -1,3 +1,14 @@
+"""
+Basic NLP Module
+
+Adds two numbers together
+
+Functions:
+    1. basic_interpret(message): Counts the frequency of words in a sentence
+
+Author: Michael Vlatko
+"""
+
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')

@@ -6,12 +6,14 @@ Interprets messages and calls the appropriate actions to return to the slackbot
 Functions:
     1. interpret_message(message): Interpret the message and return a response
 
-Author: Ian Jackson
+Authors: Ian Jackson (add, multiply, hi)
+Authors: Michael Vlatko (break, nats)
 """
-
+import asyncio
 import add  # TODO: figure out how to dynamically load and call module
 import multiply
 import basic
+import serverNats
 
 
 def interpret_message(message):
@@ -38,5 +40,7 @@ def interpret_message(message):
         string_dict = {key: str(value) for key, value in pass_msg.items()}
         print(string_dict)
         return str(string_dict)
+    if args[0] == "nats":
+        return asyncio.run(serverNats.send_to(message))
 
     return None
