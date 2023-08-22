@@ -66,8 +66,12 @@ def interpret_message(message):
     (functionName, parameter) = parse_message(message)
 
     if functionName != None:
-        module = __import__(functionName)
-        return module.run(parameter)
+        try:
+            module = __import__(functionName)
+            return module.run(parameter)
+        except Exception as e:
+            print(e)
+            return "Error calling module"
     else:
         args = message.split()
         if args[0] == "hi":
