@@ -25,18 +25,19 @@ JSON Data: '{"jobType": "INCREMENTAL", "consentIds": ["43779743-b56d-4bd8-a93a-c
 The NATS message we would receive back from our microservice
 {"status":"OK","jobStartStat":{"customers.v2.collector.start":{"succeeded":7,"failed":0}}}
 """
-#takes string and converts to json
-def generate_output(message):
-    return json.dumps({
-        "jobType": "INCREMENTAL",
-        "consentIds": message
-    })
 
-#takes in user input of consent ids
+
+# takes string and converts to json
+def generate_output(message):
+    return json.dumps({"jobType": "INCREMENTAL", "consentIds": message})
+
+
+# converts string of consent ids into cleaned array
 def get_consent(message):
-    consents_str = message[len("example"):].strip()
+    consents_str = message.strip()
     consents = [cid.strip() for cid in consents_str.split(",")]
     return consents
+
 
 async def run(params):
     """
@@ -50,20 +51,20 @@ async def run(params):
 
     """
 
-    #strip and assemble input
+    # strip and assemble input
     insert = get_consent(params)
-    consentString = "collectors.v1.process.start." + ''.join(insert)
+    consentString = "collectors.v1.process.start." + "".join(insert)
 
-    #fire up nats server
+    # fire up nats server
     servers = os.environ.get("NATS_URL", "nats://nats:4222").split(",")
 
-    #connect to server
+    # connect to server
     try:
         nc = await nats.connect(servers=servers)
     except Exception as e:
         return "Failed to connect to NATS server"
-    
-    #function that talks to nats
+
+    # function that talks to nats
     async def callback(msg):
         try:
             name = msg.subject[28:]
@@ -71,22 +72,22 @@ async def run(params):
             await msg.respond(reply.encode("utf8"))
         except Exception as e:
             return "Error in callback"
-    
-    #set up listening for collectors.v1.process.start
+
+    # set up listening for collectors.v1.process.start
     try:
         sub = await nc.subscribe("collectors.v1.process.start.*", cb=callback)
     except Exception as e:
         return "Error in subscription"
-    
-    #put assembled string into the server
+
+    # put assembled string into the server
     try:
-        rep = await nc.request(consentString, b'', timeout=10)
+        rep = await nc.request(consentString, b"", timeout=10)
     except Exception as e:
         return "Error in requesting"
 
     await sub.drain()
 
-    #assemble output into json
+    # assemble output into json
     response_data = rep.data.decode("utf-8")
     output_json = generate_output(response_data)
 

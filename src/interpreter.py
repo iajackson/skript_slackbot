@@ -69,7 +69,7 @@ def interpret_message(message):
     if functionName != None:
         try:
             module = __import__(functionName)
-            return module.run(parameter)
+            return asyncio.run(module.run(parameter))
         except Exception as e:
             print(e)
             return "Error calling module"
