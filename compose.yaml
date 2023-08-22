@@ -14,3 +14,7 @@ services:
       - ./src:/src
     ports:
       - '${BOT_PORT}:${BOT_PORT}'
+  nats:
+    image: nats:latest
+    ports:
+      - '4222:4222'

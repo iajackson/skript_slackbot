@@ -18,7 +18,7 @@ async def send_to(message):
     
     print("first hurdle")
 
-    servers = os.environ.get("NATS_URL", "nats://localhost:4222").split(",")
+    servers = os.environ.get("NATS_URL", "nats://nats:4222").split(",")
     nc = await nats.connect(servers=servers)
 
     insert = "greet." + message.replace(" ", "_")

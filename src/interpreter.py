@@ -13,6 +13,7 @@ Authors: Michael Vlatko (break, nats)
 import asyncio
 import basic
 import serverNats
+import startCollectors
 
 
 def parse_message(message):
@@ -83,5 +84,7 @@ def interpret_message(message):
             return str(string_dict)
         if args[0] == "nats":
             return asyncio.run(serverNats.send_to(message))
+        if args[0] == "example":
+            return asyncio.run(startCollectors.run(message))
 
     return None
