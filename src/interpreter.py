@@ -71,7 +71,6 @@ def interpret_message(message):
             module = __import__(functionName)
             return asyncio.run(module.run(parameter))
         except Exception as e:
-            print(e)
             return "Error calling module"
     else:
         args = message.split()

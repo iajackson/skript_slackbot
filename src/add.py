@@ -10,7 +10,7 @@ Author: Ian Jackson
 """
 
 
-def run(input):
+async def run(input):
     """
     Adds two numbers together
 

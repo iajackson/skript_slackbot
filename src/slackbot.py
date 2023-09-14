@@ -39,16 +39,17 @@ def message(payload):
     Parameters:
         message (payload): The slack event payload
     """
-    print(payload)
     event = payload.get("event", {})
     channel_id = event.get("channel")
     user_id = event.get("user")
     text = event.get("text")
+    bot_profile = event.get("bot_profile")
 
-    response = interpreter.interpret_message(text)
+    if not bot_profile:
+        response = interpreter.interpret_message(text)
 
-    if response != None:
-        client.chat_postMessage(channel=channel_id, text=response)
+        if response != None:
+            client.chat_postMessage(channel=channel_id, text=response)
 
 
 if __name__ == "__main__":

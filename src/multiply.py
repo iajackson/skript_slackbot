@@ -10,7 +10,7 @@ Author: Ian Jackson
 """
 
 
-def run(input):
+async def run(input):
     """
     Multiplies two numbers together
 

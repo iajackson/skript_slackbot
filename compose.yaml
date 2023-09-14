@@ -7,6 +7,7 @@ services:
       - SLACK_TOKEN=${BOT_SLACK_TOKEN}
       - SIGNING_SECRET=${BOT_SIGNING_SECRET}
       - PORT=${BOT_PORT}
+      - NATS_URL=${BOT_NATS_URL}
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT

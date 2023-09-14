@@ -14,8 +14,8 @@ import asyncio
 import nats
 from nats.errors import TimeoutError, NoRespondersError
 
+
 async def send_to(message):
-    
     print("first hurdle")
 
     servers = os.environ.get("NATS_URL", "nats://nats:4222").split(",")
@@ -30,8 +30,8 @@ async def send_to(message):
 
     sub = await nc.subscribe("greet.*", cb=greet_handler)
 
-    rep = await nc.request(insert, b'', timeout=10)
-    
+    rep = await nc.request(insert, b"", timeout=10)
+
     await sub.drain()
 
-    return rep.data.decode('utf-8')
+    return rep.data.decode("utf-8")
