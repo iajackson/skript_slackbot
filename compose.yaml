@@ -8,6 +8,7 @@ services:
       - SIGNING_SECRET=${BOT_SIGNING_SECRET}
       - PORT=${BOT_PORT}
       - NATS_URL=${BOT_NATS_URL}
+      - PYTHONUNBUFFERED=false
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
@@ -15,7 +16,3 @@ services:
       - ./src:/src
     ports:
       - '${BOT_PORT}:${BOT_PORT}'
-  nats:
-    image: nats:latest
-    ports:
-      - '4222:4222'

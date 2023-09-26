@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM --platform=$BUILDPLATFORM python:3.11-alpine AS builder
+FROM --platform=$BUILDPLATFORM continuumio/anaconda3 AS builder
 
 WORKDIR /src
 

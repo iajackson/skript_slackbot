@@ -1,0 +1,306 @@
+message,label
+"Hey Slackbot, initiate the collectors task for these consents",startCollectors
+"Slackbot, could you kick off the collectors job for these consents?",startCollectors
+"Can you run the collectors process for these consents, Slackbot?",startCollectors
+"Hey Slackbot, I need the collectors task to begin for these consents",startCollectors
+"Would you start the collectors operation for these consents, Slackbot?",startCollectors
+"Slackbot, please trigger the collectors job for the given consents",startCollectors
+"I'd like you to start the collectors activity for these consents, Slackbot",startCollectors
+"Could you set off the collectors task for these consents, Slackbot?",startCollectors
+"Slackbot, I'm asking you to commence the collectors job for these consents.",startCollectors
+"Activate the collectors process for these consents, please, Slackbot.",startCollectors
+"Slackbot, kindly launch the collectors job for the mentioned consents.",startCollectors
+"Would it be possible to start the collectors procedure for these consent, Slackbot?",startCollectors
+"Slackbot, I'm in need of the collectors task for these consents. Can you start it?",startCollectors
+"Fire up the collectors process for these consents, Slackbot.",startCollectors
+"Begin the collectors job for these consents on my behalf, Slackbot.",startCollectors
+"Slackbot, it's time to roll out the collectors task for these consents.",startCollectors
+"Can you push forward the collectors job for these consents, Slackbot?",startCollectors
+"Slackbot, set in motion the collectors task for these consents, please.",startCollectors
+"Please activate the collectors procedure for these consents, Slackbot.",startCollectors
+"Hey Slackbot, it'd be great if you can initiate the collectors process for the consents.",startCollectors
+"Kickstart the collectors job for these consent for me, Slackbot.",startCollectors
+"Slackbot, go ahead and start the collectors operation for the given consents.",startCollectors
+"I request you to begin the collectors task for these consents, Slackbot.",startCollectors
+"Hey Slackbot, please proceed with the collectors job for these consents.",startCollectors
+"Can you oversee the start of the collectors process for these consents, Slackbot?",startCollectors
+"Slackbot, it's time to activate the collectors job for the consents mentioned.",startCollectors
+"Turn on the collectors operation for these consent, please, Slackbot.",startCollectors
+"Hey Slackbot, can we get the collectors task rolling for these consents?",startCollectors
+"Please set the ball rolling for the collectors job concerning these consents, Slackbot.",startCollectors
+"Slackbot, the consents are ready, can you initiate the collectors process?",startCollectors
+"initiate the collectors task for these consents",startCollectors
+"could you kick off the collectors job for these consents?",startCollectors
+"Can you run the collectors process for these consents",startCollectors
+"I need the collectors task to begin for these consents.",startCollectors
+"Would you start the collectors operation for these consents",startCollectors
+"please trigger the collectors job for the given consents",startCollectors
+"I'd like you to start the collectors activity for these consents",startCollectors
+"Could you set off the collectors task for these consents",startCollectors
+"I'm asking you to commence the collectors job for these consents",startCollectors
+"Activate the collectors process for these consents",startCollectors
+"kindly launch the collectors job for the mentioned consents",startCollectors
+"Would it be possible to start the collectors procedure for these consents",startCollectors
+"I'm in need of the collectors task for these consents. Can you start it?",startCollectors
+"Fire up the collectors process for these consents",startCollectors
+"Begin the collectors job for these consents on my behalf",startCollectors
+"it's time to roll out the collectors task for these consents",startCollectors
+"Can you push forward the collectors job for these consents",startCollectors
+"set in motion the collectors task for these consents",startCollectors
+"Please activate the collectors procedure for these consents",startCollectors
+"it'd be great if you can initiate the collectors process for the consents",startCollectors
+"Kickstart the collectors job for these consent for me",startCollectors
+"go ahead and start the collectors operation for the given consent",startCollectors
+"I request you to begin the collectors task for these consents",startCollectors
+"please proceed with the collectors job for these consents",startCollectors
+"Can you oversee the start of the collectors process for these consents",startCollectors
+"it's time to activate the collectors job for the consents mentioned",startCollectors
+"Turn on the collectors operation for these consent",startCollectors
+"can we get the collectors task rolling for these consents?",startCollectors
+"Please set the ball rolling for the collectors job concerning these consents,",startCollectors
+"the consents are ready, can you initiate the collectors process?",startCollectors
+"can you kick off the collector's task for these consents",startCollectors
+"could you initiate the colectors job for these consents",startCollectors
+"Can you run the collecter process for these consents, Slackbot?",startCollectors
+"I need the colletors task to begin for these consents",startCollectors
+"Would you start the colecters operation for these consentz, Slackbot?",startCollectors
+"please trigger the colletor's job for the given consentz.",startCollectors
+"I'd like you to start the colectors activity for these consents",startCollectors
+"Could you set off the collecters task for these consentz",startCollectors
+"I'm asking you to commence the collector's job for these consents",startCollectors
+"Activate the colletors process for these consents",startCollectors
+"kindly launch the collector's job for the mentioned consentz",startCollectors
+"Would it be possible to start the collecters procedure for these consents",startCollectors
+"I'm in need of the colletors task for these consents. Can you start it?",startCollectors
+"Fire up the collecter's process for these consentz",startCollectors
+"Begin the colletors job for these consentz on my behalf",startCollectors
+"it's time to roll out the collecters task for these consent",startCollectors
+"it'd be great if you can initiate the collecter process for the consent",startCollectors
+"go ahead and start the collecter operation for the given consent",startCollectors
+"Turn on the colletor operation for these consent",startCollectors
+"Please set the ball rolling for the collecter job concerning these consent",startCollectors
+"collectors and consents",startCollectors
+"cllector consent",startCollectors
+"cllectors consents",startCollectors
+"consents",startCollectors
+"collectors",startCollectors
+"collector",startCollectors
+"consent",startCollectors
+"cnsent",startCollectors
+"colector",startCollectors
+"colector and cnsent",startCollectors
+"cllectr cnsent",startCollectors
+"colletors and consents",startCollectors
+"colector constns",startCollectors
+"I need colector and consts",startCollectors
+"get me collector and consent",startCollectors
+"fetch me the colector and consent",startCollectors
+"hey dude I need the collector and consetn",startCollectors
+"can you get me the collecotr and cnset",startCollectors
+"startCollectors",startCollectors
+"strtCollectors",startCollectors
+"strtColectors",startCollectors
+"startColectors",startCollectors
+"startCllectors",startCollectors
+"statCollectors",startCollectors
+"statColectors",startCollectors
+"startcollectors",startCollectors
+"startcolectors",startCollectors
+"startcollector",startCollectors
+"Slackbot, can you provide the list of organisations?",getCommunities
+"can you provide the list of organisations?",getCommunities
+"Hey Slackbot, I'd like to see the list of organisations.",getCommunities
+"I'd like to see the list of organisations.",getCommunities
+"Could you fetch the organisations list for me, Slackbot?",getCommunities
+"Could you fetch the organisations list for me",getCommunities
+"Slackbot, I need an overview of all the organisations.",getCommunities
+"I need an overview of all the organisations",getCommunities
+"Please display the organisations list, Slackbot.",getCommunities
+"Please display the organisations list",getCommunities
+"I'm interested in the list of organisations, Slackbot. Can you show me?",getCommunities
+"Slackbot, pull up the list of organisations, please",getCommunities
+"pull up the list of organisations",getCommunities
+"Hey Slackbot, may I have the organisations list?",getCommunities
+"may I have the organisations list?",getCommunities
+"Slackbot, could you show me the list containing all the organisations?",getCommunities
+"could you show me the list containing all the organisations?",getCommunities
+"Retrieve the list of organisations for me, Slackbot.",getCommunities
+"Retrieve the list of organisations for me",getCommunities
+"Slackbot, what are the organisations we have on the list?",getCommunities
+"what are the organisations we have on the list?",getCommunities
+"Hey Slackbot, I'm looking for the organisations list.",getCommunities
+"I'm looking for the organisations list",getCommunities
+"Slackbot, kindly present the list of organisations.",getCommunities
+"kindly present the list of organisations.",getCommunities
+"Can you bring up the organisations list, Slackbot?",getCommunities
+"Can you bring up the organisations list",getCommunities
+"Hey Slackbot, I'd appreciate it if you could show the organisations list.",getCommunities
+"I'd appreciate it if you could show the organisation list",getCommunities
+"Slackbot, let's have a look at the list of organisations.",getCommunities
+"let's have a look at the list of organisation",getCommunities
+"Please provide a rundown of all the organisations, Slackbot.",getCommunities
+"Please provide a rundown of all the organisations",getCommunities
+"Slackbot, give me an insight into the organisations we have.",getCommunities
+"give me an insight into the organisations we have.",getCommunities
+"I'd love to see the organisations list, Slackbot.",getCommunities
+"I'd love to see the organisations list",getCommunities
+"Slackbot, can you help me access the list of organisations?",getCommunities
+"can you help me access the list of organisations?",getCommunities
+"Display the organisations list for me, please, Slackbot.",getCommunities
+"Display the organisations list for me",getCommunities
+"Slackbot, can you quickly show the organisations list?",getCommunities
+"can you quickly show the organisations list?",getCommunities
+"I'm curious about the organisations we have, Slackbot. Show me.",getCommunities
+"I'm curious about the organisation we have",getCommunities
+"Slackbot, highlight the list of organisations for me",getCommunities
+"highlight the list of organisations for me",getCommunities
+"Let's go over the organisations list, Slackbot.",getCommunities
+"Let's go over the organisation list",getCommunities
+"Slackbot, reveal the organisations list to me, please",getCommunities
+"reveal the organisations list to me, please",getCommunities
+"I'm inquiring about the list of organisations, Slackbot",getCommunities
+"I'm inquiring about the list of organisations",getCommunities
+"Hey Slackbot, me through the organisations we have listed",getCommunities
+"me through the organisations we have listed",getCommunities
+"Provide a snapshot of the organisation list, Slackbot",getCommunities
+"Provide a snapshot of the organisation list",getCommunities
+"Could you pull up the organistaions list for me",getCommunities
+"I'd like to see the list of organisatons",getCommunities
+"Provide me with the list of organistion, please, Slackbot.",getCommunities
+"Provide details on orgnistaions",getCommunities
+"showcase the oganistaions we have",getCommunities
+"showcase the organistaion we have",getCommunities
+"organ",getCommunities
+"orginisation",getCommunities
+"organasation",getCommunities
+"orgenisation",getCommunities
+"organazation",getCommunities
+"organisaton",getCommunities
+"organisashun",getCommunities
+"organizaton",getCommunities
+"orgnisation",getCommunities
+"orgainisation",getCommunities
+"organesation",getCommunities
+"orginasation",getCommunities
+"orgenisetion",getCommunities
+"orgonisation",getCommunities
+"organisetion",getCommunities
+"organisazion",getCommunities
+"org",getCommunities
+"Retrieve the list of organisations for me",getCommunities
+"Slackbot, what are the orgenisetion we have on the list?",getCommunities
+"what are the organisations we have on the list?",getCommunities
+"Hey Slackbot, I'm looking for the organisashun list.",getCommunities
+"I'm looking for the organ list",getCommunities
+"Slackbot, kindly present the list of orgonisation.",getCommunities
+"kindly present the list of organisations.",getCommunities
+"Can you bring up the organisations list, Slackbot?",getCommunities
+"Can you bring up the organisations list",getCommunities
+"Hey Slackbot, I'd appreciate it if you could show the organisazion list.",getCommunities
+"I'd appreciate it if you could show the organistion list",getCommunities
+"Slackbot, let's have a look at the list of organisatons.",getCommunities
+"let's have a look at the list of organisatn",getCommunities
+"Please provide a rundown of all the oganisations, Slackbot.",getCommunities
+"Please provide a rundown of all the org",getCommunities
+"Slackbot, give me an insight into the organiations we have.",getCommunities
+"give me an insight into the oanisations we have.",getCommunities
+"I'd love to see the organistions list, Slackbot.",getCommunities
+"I'd love to see the organisatio list",getCommunities
+"Slackbot, can you help me access the list of organizations?",getCommunities
+"can you help me access the list of organizations?",getCommunities
+"Display the organisaons list for me, please, Slackbot.",getCommunities
+"Display the organ list for me",getCommunities
+"Slackbot, can you quickly show the organisatio list?",getCommunities
+"can you quickly show the org list?",getCommunities
+"I'm curious about the organizations we have, Slackbot. Show me.",getCommunities
+"I'm curious about the organisaton we have",getCommunities
+"Slackbot, highlight the list of organisations for me",getCommunities
+"highlight the list of orgnisations for me",getCommunities
+"Let's go over the orgnisations list, Slackbot.",getCommunities
+"Let's go over the orgnisations list",getCommunities
+"Slackbot, reveal the organs list to me, please",getCommunities
+"reveal the orgnisations list to me, please",getCommunities
+"I'm inquiring about the list of org, Slackbot",getCommunities
+"getCommunities",getCommunities
+"getComunities",getCommunities
+"gtCommunities",getCommunities
+"gtComunities",getCommunities
+"getCommnities",getCommunities
+"gtCommnities",getCommunities
+"gtCommnities",getCommunities
+"getCommunity",getCommunities
+"gtCommunity",getCommunities
+"getComunties",getCommunities
+"Please retrieve the data for this holder.",getDCR
+"Please retrieve the data for this data holder.",getDCR
+"get the data for the following holder",getDCR
+"data holder guid",getDCR
+"guiddata",getDCR
+"Guiddata",getDCR
+"guidata",getDCR
+"guidata holder",getDCR
+"guidata holdr",getDCR
+"dtaholder",getDCR
+"dataholder",getDCR
+"hlder data",getDCR
+"hold Data",getDCR
+"dat holder",getDCR
+"dta holdr",getDCR
+"dta holder",getDCR
+"data holder",getDCR
+"data holdr",getDCR
+"data",getDCR
+"With the information for the data holder?",getDCR
+"What's the information assigned to the data holder with this guid?",getDCR
+"Hey slackbot What's the information assigned to the data holder with this guid?",getDCR
+"Can you provide the details for the data holder with this guid?",getDCR
+"What details correspond to this guid in our system?",getDCR
+"slackbot what details correspond to this guid in our system?",getDCR
+"I need information on the data holder linked to this guid.",getDCR
+"Can you fetch the data associated with this guid?",getDCR
+"What's linked to this specific guid?",getDCR
+"What does this guid reference in our database?",getDCR
+"Which data holder does this guid point to?",getDCR
+"I'm looking for details tied to this guid.",getDCR
+"What information does this guid represent?",getDCR
+"I'd like to know more about the data holder this guid refers to.",getDCR
+"Can I get the data linked with this particular guid?",getDCR
+"Show me the information connected to this guid.",getDCR
+"What's stored under this guid?",getDCR
+"Please pull up the data for the holder with this guid.",getDCR
+"Slackbot please pull up the data for the holder with this guid.",getDCR
+"Can you display the details associated with this guid?",getDCR
+"I'm inquiring about the data holder for this guid.",getDCR
+"Please provide the entry related to this guid.",getDCR
+"What content is mapped to this guid?",getDCR
+"What's the relation of this guid to its data holder?",getDCR
+"Fetch the data holder's details for this guid.",getDCR
+"Can you look up what this guid corresponds to?",getDCR
+"Show me the database entry for this guid.",getDCR
+"Which information is indexed under this guid?",getDCR
+"I'd like the details stored against this guid.",getDCR
+"hey slackbot I'd like the details stored against this guid.",getDCR
+"slackbot I'd like the details stored against this guid.",getDCR
+"Retrieve the data holder information for this guid.",getDCR
+"Which holder's details are associated with this guid?",getDCR
+"I'm curious about the data holder that this guid maps to.",getDCR
+"Help me find the information for the holder with this guid.",getDCR
+"Can you pinpoint the data related to this guid?",getDCR
+"slackbot Can you pinpoint the data related to this guid?",getDCR
+"hey Slackbot Can you pinpoint the data related to this guid?",getDCR
+"Please pull the records for the data holder attached to this guid.",getDCR
+"I'd like to understand what this guid stands for in our system.",getDCR
+"Direct me to the data linked to this specific guid.",getDCR
+"Can you clarify what's denoted by this guid?",getDCR
+"Show me the details that this guid corresponds to.",getDCR
+"Highlight the information stored against this guid.",getDCR
+"Please navigate to the data of the holder tied to this guid.",getDCR
+"Unveil the data holder's information associated with this guid.",getDCR
+"Can you spotlight the details for the holder with this guid?",getDCR
+"hey slackbot can you spotlight the details for the holder with this guid?",getDCR
+"Fetch me the data for the holder represented by this guid.",getDCR
+"Guide me to the details indexed under this guid.",getDCR
+"getDCR",getDCR
+"gtDCR",getDCR
+"getdcr",getDCR
+"gtdcr",getDCR

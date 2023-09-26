@@ -3,3 +3,5 @@ flask
 slackeventsapi
 nltk
 nats-py
+pandas
+scikit-learn

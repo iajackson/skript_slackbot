@@ -6,7 +6,7 @@ Talks to slack. Passes messages to interpreter Returns responses to slack
 Functions:
     1. message(payload): The slack api message event handler
 
-Author: Ian Jackson
+Author: Ian Jackson, Michael Vlatko
 """
 
 import os
@@ -30,6 +30,8 @@ slack_event_adapter = SlackEventAdapter(SIGNING_SECRET, "/slack/events", app)
 
 client = slack.WebClient(token=SLACK_TOKEN)
 
+awaiting_confirmation = {}
+default_response = "Please confirm with 'yes' or 'no' only\n"
 
 @slack_event_adapter.on("message")
 def message(payload):
@@ -45,12 +47,28 @@ def message(payload):
     text = event.get("text")
     bot_profile = event.get("bot_profile")
 
-    if not bot_profile:
-        response = interpreter.interpret_message(text)
-
-        if response != None:
+    if user_id in awaiting_confirmation:
+        if text == "yes":
+            (func, params) = awaiting_confirmation[user_id]
+            convert_message = interpreter.tuple_message(func, params)
+            response = interpreter.interpret_message(convert_message)
             client.chat_postMessage(channel=channel_id, text=response)
-
+            del awaiting_confirmation[user_id]
+            return
+        elif text == "no":
+            client.chat_postMessage(channel=channel_id, text ="Query cancelled!")
+            del awaiting_confirmation[user_id]
+            return
+        else:
+            client.chat_postMessage(channel=channel_id, text=default_response)
+            return
+    
+    if not bot_profile:
+        (func, params) = interpreter.parse_message(text)
+        confirm = interpreter.tuple_message(func, params)
+        client.chat_postMessage(channel=channel_id, text=confirm)
+        client.chat_postMessage(channel=channel_id, text=default_response)
+        awaiting_confirmation[user_id] = (func, params)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=PORT, debug=True)

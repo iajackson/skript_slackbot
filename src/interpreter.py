@@ -6,6 +6,7 @@ Interprets messages and calls the appropriate actions to return to the slackbot
 Functions:
     1. parse_message(message): Attempts to parses a message in the expected format
     2. interpret_message(message): Interpret the message and return a response
+    3. tuple_message(func, params): Creates a palatable string
 
 Authors: Ian Jackson (add, multiply, hi)
 Authors: Michael Vlatko (break, nats)
@@ -13,8 +14,11 @@ Authors: Michael Vlatko (break, nats)
 import asyncio
 import basic
 import serverNats
-import startCollectors
+import botNlp
 
+#Returns a palatable string for internals and externals
+def tuple_message(func, params):
+    return f"Function name: {func}\nFunction parameter: {params}"
 
 def parse_message(message):
     """
@@ -50,7 +54,8 @@ def parse_message(message):
     except Exception as e:
         # Failed to parse message, attempt NLP
         print("Failure to parse message. Attempting NLP")
-        return (None, None)
+        (functionName, parameter) = botNlp.parse_message(message)
+        return (functionName, parameter)
 
 
 def interpret_message(message):
@@ -83,7 +88,5 @@ def interpret_message(message):
             return str(string_dict)
         if args[0] == "nats":
             return asyncio.run(serverNats.send_to(message))
-        if args[0] == "example":
-            return asyncio.run(startCollectors.run(message))
 
     return None
